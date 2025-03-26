@@ -54,6 +54,7 @@ body {
     width: fit-content;
     font-size: 21px;
     padding: 15px 30px;
+    text-decoration: none;
 }
 .btn:hover {
     background-color: var(--primary-hover-color);
@@ -221,11 +222,18 @@ body {
 .pricing {
     padding: 50px 20px;
     text-align: center;
-    margin: 0 56px;
+}
+.inline-flex {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
 }
 .pricing .price-detail {
     display: flex;
     align-items: center;
+    max-width: 1450px;
+    margin: 0 auto;
+    width: 100%;
 }
 .price-decoration-box {
     box-shadow: 0px 0px 20px 0px #00000026;
@@ -500,7 +508,6 @@ body {
 }
 
 .benefits__content .benefits__image {
-    height: 600px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -665,7 +672,7 @@ body {
 }
 /* Footer */
 .footer {
-    padding: 20px;
+    padding: 1rem;
     text-align: center;
     background: #fafafa;
     border-top: 1px solid #e7e7e7;
@@ -673,7 +680,6 @@ body {
 
 .footer p {
     font-weight: 500;
-    font-size: 19px;
     line-height: 100%;
     text-align: center;
     color: #6d6d6d;
@@ -687,15 +693,7 @@ body {
         width: 100% !important;
     }
 }
-@media (max-width: 575px) {
-    .header__logos {
-        flex-direction: column;
-    }
-    .hero .hero-inner-detail .right .hero__images img {
-        height: 100% !important;
-        width: 100% !important;
-    }
-}
+
 @media (max-width: 767px) {
     .hero h1 {
         font-size: 50px;
@@ -711,18 +709,31 @@ body {
 
     .benefits__content {
         flex-direction: column-reverse;
+        margin: 0 0 0;
     }
     .benefits__content .benefits__image {
         width: fit-content !important;
+        margin-top:1rem;
     }
-    .support-plan {
-        margin-bottom: 610px !important;
+    .header__logos {
+        flex-direction: column;
+    }
+    .hero .hero-inner-detail .right .hero__images img {
+        height: 100% !important;
+        width: 100% !important;
+    }
+    .support-plan{
+        margin-bottom: 350px;
+    }
+    .support-plan .inner-contet-box{
+        margin-bottom: -300px;
     }
 }
 
 @media (max-width: 1024px) {
     .hero .hero-inner-detail {
         flex-wrap: wrap;
+        gap: 1rem;
     }
     .hero .hero-inner-detail .booking-box {
         flex-direction: column;
@@ -747,7 +758,7 @@ body {
     }
     .btn {
         padding: 12px 16px !important;
-        font-size: 20px !important;
+        font-size: 18px !important;
         line-height: 22px !important;
     }
     .hero h1 {
@@ -778,15 +789,12 @@ body {
     .benefits {
         background: linear-gradient(180deg, #faf7f0 0%, #ffffff 100%);
     }
-    .support-plan {
-        margin-bottom: 524px;
-        max-height: 440px;
-    }
+    
     .support-plan .guarantees {
         margin-top: 20px;
     }
     .plain-decoration .right-content {
-        padding: 1.5rem 0 0 0;
+        padding: 1rem;
     }
 
     .benefits__list {
@@ -846,14 +854,11 @@ body {
     }
     .feature .title {
         font-size: 30px;
+        line-height: normal;
     }
 
     .divider__text {
         max-width: 460px;
-    }
-    .benefits__content .benefits__image {
-        height: 450px;
-        width: 100%;
     }
 }
 @media (max-width: 1345px) {
