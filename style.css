@@ -298,7 +298,6 @@ body {
     position: relative;
     padding-left: 24px;
     display: flex;
-    align-items: center;
     font-weight: 500;
     font-size: 18px;
     line-height: 30px;
@@ -314,6 +313,7 @@ body {
     color: var(--primary-color);
     position: absolute;
     left: 0;
+    top: 6px;
 }
 
 /* How It Works Section */
@@ -968,5 +968,14 @@ body {
     .hero .hero-inner-detail .booking-box p{
         font-size: 16px;
         line-height: 22.9px;
+    }
+    .pricing__card ul li {
+        font-size: 13px !important;
+        margin-bottom: 2px;
+        line-height: 18px;
+        margin-bottom: 1rem;
+    }
+    .pricing__card ul li:before{
+        top: 1px;
     }
 }
